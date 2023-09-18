@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* h3, h4 */
+@font-face {
+    font-family: 'TTWanjudaedunsancheB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+/* h3, h4 */
+@font-face {
+    font-family: 'TTTtangsbudaejjigaeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    color: #333;
+    line-height: 1;
+}
+
+header {display: none;}
+.main_visual {display: none;}
+
+
+
+section h3, section h4 {
+    font-family: 'TTTtangsbudaejjigaeB';
+    font-size: 50px;
+}
+.tea {
+    padding: 200px 0;
+}
+
+.tea .inner {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.tea .inner .title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.tea .inner .product {
+    display: flex;
+    justify-content: space-between;
+}
+.tea .inner .product .product__info {
+    width: 35%;
+}
+.tea .inner .product .product__info span {
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    position: relative; 
+    padding: 0 20px;
+}
+/* .tea .inner .product .product__info span::before {
+    content: '';
+    width: 100%;
+    height: 7px;
+    background-color: orange;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3px;
+    z-index: -1;
+} */
+.tea .inner .product .product__info h4 {
+    font-family: 'TTWanjudaedunsancheB';
+    font-size: 40px;
+    word-break: keep-all;
+    margin: 10px 0 20px; 
+}
+.tea .inner .product .product__info p {
+    line-height: 1.3;
+}
+.tea .inner .product .product__info strong {}
+ 
+ 
+.tea .inner .product figure {
+    width: 50%;
+    border: 2px solid #000;
+    border-radius: 50% 50% 0 0;
+    overflow: hidden;
+}
+.tea .inner .product figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
